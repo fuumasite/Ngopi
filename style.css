@@ -104,7 +104,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url('../img/hero1.jpg');
+  background-image: url('./assets/img/hero1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -345,7 +345,7 @@ section .menu {
 }
 
 .footer-background {
-  background-image: url('../img/footer.jpg');
+  background-image: url('./assets/img/footer.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; /* Ini yang menciptakan efek paralaks */
