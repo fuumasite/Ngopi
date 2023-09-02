@@ -57,7 +57,7 @@ section {
 }
 
 .navbar .logo-navbar {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #fff;
 }
@@ -69,7 +69,7 @@ section {
 .navbar .navbar-nav a {
   display: inline-block;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin: 0 1rem;
 }
 
@@ -385,6 +385,8 @@ section {
   margin-top: 100px;
   display: flex;
   justify-content: space-around;
+  background-color: rgba(192, 160, 128, 0.4); /* Warna dengan tingkat kecerahan (alpha) 0.5 */
+
 }
 
 .footer-col {
@@ -392,7 +394,7 @@ section {
   padding: 70px;
 }
 
-.footer-col h3 {
+.footer-col {
   font-size: 20px;
   margin-bottom: 10px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Efek text-shadow */
