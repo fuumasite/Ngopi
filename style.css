@@ -337,6 +337,13 @@ section .menu {
   line-height: 1.6rem;
 }
 
+.contact-item a, .footer-info a {
+  color: var(--primary);
+}
+.contact-item a:hover, .footer-info a:hover {
+  color: #fff;
+}
+
 
 .site-footer {
   background-color: hsla(207, 24%, 7%, 0.75);
