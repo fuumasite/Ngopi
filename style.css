@@ -1,15 +1,15 @@
+/* font goggle */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto&display=swap");
 
-  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto&display=swap');
-
-
+/* warna root */
 :root {
-  --primary: #C0A080;
+  --primary: #c0a080;
   --bg: #010101;
 }
 
+/* untuk semua tag */
 * {
-  font-family: 'Oswald', sans-serif;
-
+  font-family: "Oswald", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: none;
@@ -19,23 +19,29 @@
   scroll-behavior: smooth;
 }
 
-
-
-h1, h2, h3 {
-  font-family: 'Oswald', sans-serif;
+/* font */
+h1,
+h2,
+h3 {
+  font-family: "Oswald", sans-serif;
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
+/* body */
 
 body {
   background-color: var(--bg);
   color: #fff;
-  
 }
 
+section {
+  padding: 10rem 1.4rem 7%;
+}
+
+/* navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -97,14 +103,12 @@ body {
   display: none;
 }
 
-
-
 /* hero */
 .hero {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url('./assets/img/hero1.jpg');
+  background-image: url("./assets/img/hero1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -117,12 +121,16 @@ body {
 }
 
 .hero::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   width: 100%;
   height: 100%;
-  background: linear-gradient(0deg, rgba(1,1,3,1) 3%, rgba(255,255,255,0) 25%);
+  background: linear-gradient(
+    0deg,
+    rgba(1, 1, 3, 1) 3%,
+    rgba(255, 255, 255, 0) 25%
+  );
 }
 
 .hero .content {
@@ -161,22 +169,22 @@ body {
 }
 
 
-section {
-  padding: 10rem 1.4rem 7%;
-}
-
 /* about section */
- .about{
+.about {
   padding: 10rem 1.4rem 7%;
 }
 
- .about h2, .menu h2, .contact h2 {
+.about h2,
+.menu h2,
+.contact h2 {
   text-align: center;
   font-size: 2.6rem;
   margin-bottom: 3rem;
 }
 
-.about span, .menu span, .contact span {
+.about span,
+.menu span,
+.contact span {
   color: var(--primary);
 }
 
@@ -209,12 +217,9 @@ section {
   line-height: 2;
 }
 
-/* menu section */
-section .menu {
-  margin-bottom: 1rem;
-}
-
-.menu p, .contact p {
+ /* menu */
+.menu p,
+.contact p {
   text-align: center;
   max-width: 30rem;
   margin: auto;
@@ -282,7 +287,6 @@ section .menu {
 .tab-link.active {
   background-color: #333;
   color: #fff;
- 
 }
 
 .tab-content {
@@ -302,8 +306,7 @@ section .menu {
   opacity: 1; /* Atur opacity ke 1 saat aktif */
 }
 
-
-/* section row */
+/* contact */
 
 .contact-container {
   display: flex;
@@ -337,13 +340,16 @@ section .menu {
   line-height: 1.6rem;
 }
 
-.contact-item a, .footer-info a {
+.contact-item a,
+.footer-info a {
   color: var(--primary);
 }
-.contact-item a:hover, .footer-info a:hover {
+.contact-item a:hover,
+.footer-info a:hover {
   color: #fff;
 }
 
+/* footer */
 
 .site-footer {
   background-color: hsla(207, 24%, 7%, 0.75);
@@ -352,7 +358,7 @@ section .menu {
 }
 
 .footer-background {
-  background-image: url('./assets/img/footer.jpg');
+  background-image: url("./assets/img/footer.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; /* Ini yang menciptakan efek paralaks */
@@ -367,7 +373,7 @@ section .menu {
 
 .footer-col {
   flex: 1;
-  padding: 70px ;
+  padding: 70px;
 }
 
 .footer-col h3 {
@@ -375,7 +381,6 @@ section .menu {
   margin-bottom: 10px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Efek text-shadow */
 }
-
 
 .footer-content {
   display: flex;
@@ -404,20 +409,20 @@ section .menu {
   font-size: 1.4rem;
 }
 
-.social-icons a, .icon-list a
- {
+.social-icons a,
+.icon-list a {
   color: #fff;
   margin: 0 5px;
   transition: color 0.3s ease;
 }
 
-.social-icons a:hover, .icon-list a:hover{
+.social-icons a:hover,
+.icon-list a:hover {
   color: var(--primary); /* Warna berubah saat dihover */
 }
 
-
-.footer-bottom { 
-  padding: 30px; 
+.footer-bottom {
+  padding: 30px;
 }
 
 .copyright {
@@ -426,29 +431,29 @@ section .menu {
   font-size: 1.4rem;
 }
 
-
-
-
 /* laptop */
 @media (max-width: 1366px) {
   html {
     font-size: 80%;
   }
 }
+
 /* tablet */
 @media (max-width: 758px) {
   html {
     font-size: 62.5%;
   }
+
+  /* navbar */
   #hamburger-menu {
     display: inline-block;
   }
 
   .navbar .navbar-nav {
     position: absolute;
+    background-color: rgba(192, 160, 128, 0.9); /* Warna dengan tingkat kecerahan (alpha) 0.5 */
     top: 100%;
     right: -100%;
-    background-color: var(--primary);
     width: 30rem;
     height: 100vh;
     transition: 0.3s;
@@ -469,6 +474,8 @@ section .menu {
     color: var(--bg);
   }
 
+  /* about */
+
   .about .row {
     flex-wrap: wrap;
   }
@@ -488,10 +495,7 @@ section .menu {
     font-size: 1.6rem;
   }
 
-  .footer-row {
-    flex-direction: column;
-  }
-  
+  /* contact */
   .contact-container {
     display: flex;
     flex-direction: column; /* Mengubah tata letak menjadi kolom */
@@ -500,10 +504,16 @@ section .menu {
     font-size: 1.5rem;
   }
 
-    .map {
-      height: 150px;
-      width: 100%;
-    }
+  .map {
+    height: 150px;
+    width: 100%;
+  }
+
+  /* footer */
+  .footer-row {
+    flex-direction: column;
+  }
+
 }
 
 .navbar .navbar-nav a::after {
@@ -512,8 +522,6 @@ section .menu {
 .navbar .navbar-extra a:hover::after {
   transform: scaleX(0.2rem);
 }
-
-
 
 /* handphone */
 @media (max-width: 768px) {
@@ -526,7 +534,6 @@ section .menu {
 
   .footer-col {
     flex: 1;
-    padding: 20px ;
+    padding: 20px;
   }
-  
 }
